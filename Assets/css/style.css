@@ -1,0 +1,88 @@
+/* Importação fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #2759a5;
+}
+
+header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 > img {
+  width: 15rem;
+}
+
+/*Estilização monitor 1*/
+main {
+  position: relative;
+}
+/*Centralizar formulario no centro do view port*/
+.section-formulario-m1{
+  margin-top: 16rem;
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.section-formulario-m1 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #081d3d;
+}
+.section-formulario-m1 form label,
+.section-formulario-m1 form input,
+.section-formulario-m1 form textarea,
+.section-formulario-m1 form button{
+  display: block;
+  padding: 3px;
+  width: 100%;
+  margin-top: 3px;
+}
+.section-formulario-m1 form textarea,
+.section-formulario-m1 form input{
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+.section-formulario-m1 form label{
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-formulario-m1 form textarea:hover,
+.section-formulario-m1 form textarea:focus,
+.section-formulario-m1 form input:hover,
+.section-formulario-m1 form textarea:focus{
+  outline: none;
+  border-color: #032e6e;
+  box-shadow: 0 0 0 1px #032e6e;
+}
+
+
+.section-formulario-m1 form button{
+  margin-left: 35%;
+  width: 8rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+
+.section-formulario-m1 form button:hover{
+  border: 1px solid #032e6e;
+  background-color: #096cff;
+  color: white;
+  cursor: pointer;
+}
