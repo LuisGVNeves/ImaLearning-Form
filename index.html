@@ -20,18 +20,30 @@
       <section class="section-formulario-m1">
         <h2>Monitor: Luis Guilherme</h2>
 
-        <form action="https://formsubmit.co/luisguilhermevnevesnogueira@gmail.com" method="POST" onsubmit="VerificarInformacoes()" id="form">
+        <form action="https://formsubmit.co/luisguilhermevnevesnogueira@gmail.com" method="POST">
 
           <label for="nome-aluno">Nome Aluno:</label>
           <input type="text" id="nome-aluno" name="nome-aluno" placeholder="Digite seu nome">
 
           <label for="email">Email Aluno:</label>
           <input type="email" name="email" placeholder="Digite seu email" id="email-aluno" required>
+          
+          <label for="email">Data:</label>
+          <input type="date" name="date" required>
 
           <label for="assunto-aluno">Assunto:</label>
-          <textarea name="ssunto-aluno" id="ssunto-aluno" cols="30" rows="8" placeholder="Tema da Revisão e dificuldade"></textarea>
+          <textarea name="ssunto-aluno" id="ssunto-aluno" cols="30" rows="8" placeholder="Tema da Revisão e dificuldade" required></textarea>
 
-          <button type="submit" id="botao">Enviar assunto</button>
+          <!--Template do formulario-->
+          <input type="hidden" name="_template" value="box">
+
+          <!--Devolver mensagem pro usuario-->
+          <input type="hidden" name="_autoresponse" value="Em breve o monitor vai ver sua dúvida e entrar em contato.">
+
+          <!--Após enviar formulario, usuario volta a pagina da monitoria-->
+          <input type="hidden" name="_next" value="https://luisgvneves.github.io/ImaLearning-Form/">
+
+          <button type="submit" id="botao" >Enviar assunto</button>
 
       </section>
     </main>
