@@ -19,20 +19,24 @@
       <!-- Sessão formulário-->
       <section class="section-formulario-m1">
         <h2>Monitor: Luis Guilherme</h2>
-        <form action="https://formsubmit.co/luisguilhermevnevesnogueira@gmail.com" method="POST">
+
+        <form action="https://formsubmit.co/luisguilhermevnevesnogueira@gmail.com" method="POST" onsubmit="VerificarInformacoes()" id="form">
+
           <label for="nome-aluno">Nome Aluno:</label>
-          <input type="text" id="nome-aluno" name="nome-aluno">
+          <input type="text" id="nome-aluno" name="nome-aluno" placeholder="Digite seu nome">
 
           <label for="email">Email Aluno:</label>
-          <input type="email" name="email" placeholder="Email aluno" id="nome-aluno" required>
+          <input type="email" name="email" placeholder="Digite seu email" id="email-aluno" required>
 
           <label for="assunto-aluno">Assunto:</label>
-          <textarea name="ssunto-aluno" id="ssunto-aluno" cols="30" rows="8"></textarea>
+          <textarea name="ssunto-aluno" id="ssunto-aluno" cols="30" rows="8" placeholder="Tema da Revisão e dificuldade"></textarea>
 
-          <button type="submit">Enviar assunto</button>
+          <button type="submit" id="botao">Enviar assunto</button>
+
       </section>
     </main>
 
+    <script src="./Assets/js/script.js"></script>
   </body>
 
 </html>
